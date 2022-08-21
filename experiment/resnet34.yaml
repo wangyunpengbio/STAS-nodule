@@ -1,0 +1,24 @@
+# Data
+DATASET:
+  transform_name: baseline
+
+# TRAIN
+# learning rate policy: lambda|step|plateau
+TRAIN:
+  lr_policy: lambda
+# num of epoch that learning rate stay at initial
+  niter: 50
+# num of epoch that learning rate decay
+  niter_decay: 50
+# batch size
+  batch_size: 16
+# initial learning rate for adam
+  lr: 0.0001
+# momentum term of adam
+  beta1: 0.9
+  beta2: 0.999
+
+# MODEL
+MODEL:
+  model_name: ResNet34
+  pretrained: False
